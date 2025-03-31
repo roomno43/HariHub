@@ -1,45 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HariTube</title>
-    <meta name="description" content="Find latest Porn Videos on HariTube">
     <link rel="stylesheet" href="style.css">
-    <meta name="keywords" content="HariTube, HT, HariTube Porn, Porn Site">
-    <meta name="author" content="Room No. 43">
-    <link rel="icon" type="image/x-icon" href="immage/favicon.ico">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>HariHub</title>
 </head>
 <body>
-    <header class="hari-head">
-        <div class="hari-logo">
-            <h1><a href="/">Hari <span style="color: rgb(255, 0, 0); font-family: Montserrat;">Tube</a></h1>
-          </div> 
-          <nav class="hari-nav">
-            <ul class="nav">
-              <li><a href="/"><b>Home</b></a></li>
-            </ul>
-          </nav>
+    <header>
+        <h1>HariHub</h1>
+        <nav>
+            <input type="text" id="search" placeholder="Search videos..." />
+            <button id="searchBtn">Search</button>
+        </nav>
     </header>
-      <div>
-        <section id="hari-content" class="hari-content">
-      </section>
-      </div>
-      <div id="video-list" class="video-list"></div>
-      <button id="load-more" onclick="loadMoreVideos()">Load More</button>
-    <div id="ads" class="ads">
-      <section class="s-ads" id="s-ads">
-        <p>Website Under maintenance</p>
-      </section>
-    </div>
 
-    
-  <footer>
-    <div class="copyright">
-      © 2025 <b>HariTube</b> - All rights reserved.
-  </div>
-  </footer>
-  <script src="script.js"></script>
+    <main>
+        <div class="video-container" id="videoContainer">
+            <div class="video">
+                <video controls>
+                    <source src="/45.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Mia Khalifa Takes Time between Classes to Show every Inch of her Body in the Library &hearts;</h3>
+                <p>@miakhalifa</p>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="/46.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Stepsister tried out her Blowjob Skills on me then I Accidentally came inside her - Kate Kavets &hearts;</h3>
+                <p>@katekravets</p>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="/47.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Caught my Step Sister Masturbating then Fucked her Hard and Gave her a Powerful Facial Cumshot</h3>
+                <p>@lunaroulette</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <p>&copy; 2025 43 room no. All rights reserved.</p> -->
+         <P> Under Maintenance</P>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Popup Container */
+    #age-popup {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Popup Content */
+    .popup-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+    .popup-content h2 {
+        margin: 0;
+        color: #333;
+    }
+
+    .popup-content p {
+        margin: 15px 0;
+        color: #555;
+    }
+
+    .btn {
+        background-color: #0066cc;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #005bb5;
+    }
+</style>
+</head>
+<body>
+
+<div id="age-popup">
+<div class="popup-content">
+    <h2>Age Verification</h2>
+    <p>This content is for adults only. Are you 18 years of age or older?</p>
+    <button id="agree" class="btn">Yes, I am 18+</button>
+    <button id="disagree" class="btn">No, I am not</button>
+</div>
+</div>
+
+<script>
+// Show popup on page load
+window.onload = function() {
+    document.getElementById('age-popup').style.display = 'flex';
+}
+
+// Agree button event
+document.getElementById('agree').onclick = function() {
+    // Hide the popup and allow access to content
+    document.getElementById('age-popup').style.display = 'none';
+    // Here, you can redirect to another page or show the content
+}
+
+// Disagree button event
+document.getElementById('disagree').onclick = function() {
+    // Redirect or close the page based on preference
+    window.location.href = 'https://www.google.com'; // Redirect to another website
+    // Alternatively, use window.close() to close the tab if allowed
+}
+</script>
+
 </body>
 </html>
+
