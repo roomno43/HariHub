@@ -4,22 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script>
-        document.getElementById('searchBtn').addEventListener('click', function() {
-    const searchQuery = document.getElementById('search').value.toLowerCase();
-    const videos = document.querySelectorAll('.video');
-
-    videos.forEach(video => {
-        const title = video.querySelector('h2').textContent.toLowerCase();
-        if (title.includes(searchQuery)) {
-            video.style.display = 'block';
-        } else {
-            video.style.display = 'none';
-        }
-    });
-});
-
-    </script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>HariHub</title>
 </head>
@@ -35,17 +19,18 @@
     <main>
         <div class="video-container" id="videoContainer">
             <div class="video">
-               <iframe width="300" frameborder="0" src="https://mega.nz/file/NNAQ3QRK#Dnen4tA8k7fBLNecfWk-gZGNKaUkSUkt4IIKDFehXr4" allowfullscreen></iframe>
-                <h3>Mia Khalifa Takes Time between Classes to Show every Inch of her Body in the Library &hearts;</h3>
-                <p>@miakhalifa</p>
-            </div>
+                <iframe width="300" frameborder="0" src="https://mega.nz/embed/NNAQ3QRK#Dnen4tA8k7fBLNecfWk-gZGNKaUkSUkt4IIKDFehXr4" allowfullscreen ></iframe>
+            <h3>Mia Khalifa Takes Time between Classes to Show every Inch of her Body in the Library &hearts;</h3>
+            <p>@miakhalifa</p>
+        </div>
+
             <div class="video">
-                <iframe width="300" frameborder="0" src="https://mega.nz/file/hVBx2ZgK#kucVJ8s-CWGgLYcgqh_Bi4UF3Lk4VH6CZMXCxiGFlPg" allowfullscreen></iframe>
+                <iframe width="300" frameborder="0" src="https://mega.nz/embed/hVBx2ZgK#kucVJ8s-CWGgLYcgqh_Bi4UF3Lk4VH6CZMXCxiGFlPg" allowfullscreen ></iframe>
                 <h3>Stepsister tried out her Blowjob Skills on me then I Accidentally came inside her - Kate Kavets &hearts;</h3>
                 <p>@katekravets</p>
             </div>
             <div class="video">
-                <iframe width="300" frameborder="0" src="https://mega.nz/file/wAIGmIpS#Kz6Jj1AIr3EwWJopBc9bJmfu-LfPwMFp83__2CffLWw" allowfullscreen></iframe>
+                <iframe width="300" frameborder="0" src="https://mega.nz/embed/wAIGmIpS#Kz6Jj1AIr3EwWJopBc9bJmfu-LfPwMFp83__2CffLWw" allowfullscreen ></iframe>
                 <h3>Caught my Step Sister Masturbating then Fucked her Hard and Gave her a Powerful Facial Cumshot</h3>
                 <p>@lunaroulette</p>
             </div>
@@ -146,7 +131,22 @@ document.getElementById('disagree').onclick = function() {
     // Alternatively, use window.close() to close the tab if allowed
 }
 </script>
+  <script>
+        document.getElementById('searchBtn').addEventListener('click', function() {
+    const searchQuery = document.getElementById('search').value.toLowerCase();
+    const videos = document.querySelectorAll('.video');
 
+    videos.forEach(video => {
+        const title = video.querySelector('h2').textContent.toLowerCase();
+        if (title.includes(searchQuery)) {
+            video.style.display = 'block';
+        } else {
+            video.style.display = 'none';
+        }
+    });
+});
+
+    </script>
 </body>
 </html>
 
