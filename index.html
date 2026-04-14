@@ -887,7 +887,7 @@ a { text-decoration: none; }
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
-    <h1 class="header-title" id="header-title">Library</h1>
+    <h1 class="header-title" id="header-title">Randomous</h1>
     <div class="header-actions">
       <button class="btn-text pwa-install-btn" id="install-button" onclick="showToast('Install prompt not available in this preview')">Install</button>
     </div>
@@ -956,7 +956,7 @@ a { text-decoration: none; }
     <nav class="bottom-nav" id="mobile-nav">
       <button class="nav-btn active" data-page="feed" onclick="switchPage('feed', this)">
         <i class="fa-solid fa-book-open"></i>
-        Library
+        Randomous
       </button>
       <button class="nav-btn" data-page="highlights" onclick="switchPage('highlights', this)">
         <i class="fa-solid fa-star"></i>
@@ -1087,7 +1087,7 @@ const COLORS = [
 const DEMO_POSTS = [
   { id: 1, author: '@QuietPanda_42', text: "I still think about the person I sat next to in freshman chemistry. I never asked for their number and I regret it every single day.", color: 'pink',   likes: 247, comments: 38, shares: 12, time: '2h ago', date: new Date() },
   { id: 2, author: '@SilentWolf_77', text: "Sometimes I pretend to be on an important call while walking across campus just to avoid awkward eye contact with people I kind of know.", color: 'purple', likes: 519, comments: 64, shares: 29, time: '4h ago', date: new Date() },
-  { id: 3, author: '@BraveEagle_19', text: "I've been in the library for 6 hours and I haven't opened a single textbook. I just needed somewhere quiet to exist.", color: 'blue',   likes: 891, comments: 102, shares: 55, time: '6h ago', date: (() => { const d = new Date(); d.setDate(d.getDate() - 1); return d; })() },
+  { id: 3, author: '@BraveEagle_19', text: "I've been in the Randomous for 6 hours and I haven't opened a single textbook. I just needed somewhere quiet to exist.", color: 'blue',   likes: 891, comments: 102, shares: 55, time: '6h ago', date: (() => { const d = new Date(); d.setDate(d.getDate() - 1); return d; })() },
   { id: 4, author: '@HappyFox_03',   text: "I told my professor I had a 'family emergency' to get an extension. The emergency was that I forgot the assignment existed.", color: 'orange', likes: 1342, comments: 88, shares: 67, time: '1d ago', date: (() => { const d = new Date(); d.setDate(d.getDate() - 1); return d; })() },
   { id: 5, author: '@WiseLion_55',   text: "I graduated last semester and I genuinely miss pulling all-nighters with strangers in the engineering building at 3am. Nothing hit like that.", color: 'green',  likes: 2100, comments: 145, shares: 94, time: '2d ago', date: (() => { const d = new Date(); d.setDate(d.getDate() - 2); return d; })() },
   { id: 6, author: '@QuietPanda_42', text: "Every time someone asks me 'what do you do for fun?' I internally panic because I'm not sure my hobbies are real hobbies.", color: 'teal',   likes: 388, comments: 51, shares: 18, time: '3d ago', date: (() => { const d = new Date(); d.setDate(d.getDate() - 2); return d; })() },
@@ -1110,14 +1110,14 @@ const DEMO_COMMENTS = {
     ]},
   ],
   3: [
-    { id: 1, user: '@LibraryGhost', text: 'Library is the most valid place to just... be.', time: '1h ago', replies: [] },
+    { id: 1, user: '@RandomousGhost', text: 'Randomous is the most valid place to just... be.', time: '1h ago', replies: [] },
     { id: 2, user: '@EngStudent_22', text: 'The 4th floor silence hits different at 11pm', time: '3h ago', replies: [] },
   ],
   4: [
     { id: 1, user: '@SameHat_11', text: 'Family emergency = forgot = valid', time: '20m ago', replies: [] },
   ],
   5: [
-    { id: 1, user: '@Nostalgic_05', text: 'Those 3am library sessions built character honestly', time: '5h ago', replies: [] },
+    { id: 1, user: '@Nostalgic_05', text: 'Those 3am Randomous sessions built character honestly', time: '5h ago', replies: [] },
     { id: 2, user: '@AlumniVibes', text: 'Graduated 2 years ago and I think about this too', time: '8h ago', replies: [] },
   ],
   6: [
@@ -1284,7 +1284,7 @@ function switchPage(page, triggerEl) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + page).classList.add('active');
 
-  const pageTitles = { feed: 'Library', highlights: 'Highlights', profile: 'Profile', comments: 'Confession' };
+  const pageTitles = { feed: 'Randomous', highlights: 'Highlights', profile: 'Profile', comments: 'Confession' };
   const headerTitle = document.getElementById('header-title');
   if (headerTitle) headerTitle.textContent = pageTitles[page] || 'UTD Confession';
 
@@ -1336,8 +1336,8 @@ function switchPage(page, triggerEl) {
 function goBack() {
   // Restore header for previous page
   const prevPage = state.prevPage || 'feed';
-  const pageNames = { feed: 'Library', highlights: 'Highlights', profile: 'Profile' };
-  document.getElementById('header-title').textContent = pageNames[prevPage] || 'Library';
+  const pageNames = { feed: 'Randomous', highlights: 'Highlights', profile: 'Profile' };
+  document.getElementById('header-title').textContent = pageNames[prevPage] || 'Randomous';
   document.getElementById('btn-back').classList.add('hidden');
   document.getElementById('btn-menu').classList.remove('hidden');
   
@@ -1903,7 +1903,7 @@ function renderMenuCard() {
           </button>
         </div>
       </div>
-    </div>
+    </div>    
   `;
 }
 
